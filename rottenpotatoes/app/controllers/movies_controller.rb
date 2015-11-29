@@ -62,8 +62,13 @@ class MoviesController < ApplicationController
   end
 
   def search_director
-    @director = params[:director]
-    @movies = Movie.where(director: @director).to_a
+    @movies, movie_title = Movie.search_director(params[:id])
+    unless @movies
+      flash[:notice] = "'" + movie_title + "' has no director info"
+      redirect_to :index
+    else
+      render :search_director
+    end
   end
 
 end

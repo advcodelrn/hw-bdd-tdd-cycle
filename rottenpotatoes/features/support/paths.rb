@@ -20,7 +20,7 @@ module NavigationHelpers
     when /^the details page for "([^"]*)"$/
       movie_path(Movie.where(title: $1).take)
     when /^the Similar Movies page for "([^"]*)"$/
-      search_director_path(Movie.where(title: $1).take.director)
+      search_director_path(Movie.where(title: $1).take)
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

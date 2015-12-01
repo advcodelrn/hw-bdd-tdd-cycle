@@ -5,10 +5,7 @@ class Movie < ActiveRecord::Base
   def self.search_director(id)
     movie = Movie.find(id)
     if movie && movie.director
-      movies = Movie.where(director: movie.director).to_a
-      [movies, movie.title]
-    else
-      [false, movie.title]
+      Movie.where(director: movie.director).to_a
     end
   end
 end

@@ -62,12 +62,10 @@ class MoviesController < ApplicationController
   end
 
   def search_director
-    @movies, movie_title = Movie.search_director(params[:id])
+    @movies = Movie.search_director(params[:id])
     unless @movies
-      flash[:notice] = "'" + movie_title + "' has no director info"
-      redirect_to :index
-    else
-      render :search_director
+      flash[:notice] = "'" + Movie.find(params[:id]).title + "' has no director info"
+      redirect_to movies_path and return
     end
   end
 

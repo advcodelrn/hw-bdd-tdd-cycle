@@ -1801,3 +1801,158 @@ Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 
 
 
 Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:03:39 +0000
+
+
+Started GET "/assets/rails.png" for 93.72.199.161 at 2015-12-01 18:25:16 +0000
+
+
+Started GET "/" for 93.72.199.161 at 2015-12-01 18:27:41 +0000
+
+
+Started GET "/movies" for 93.72.199.161 at 2015-12-01 18:27:42 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (57.3ms)
+Completed 200 OK in 401ms (Views: 313.6ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:42 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:27:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:43 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:43 +0000
+
+
+Started GET "/movies/5" for 93.72.199.161 at 2015-12-01 18:27:50 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered movies/show.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 34ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:27:50 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:50 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:50 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:50 +0000
+
+
+Started GET "/movies/search-director/5" for 93.72.199.161 at 2015-12-01 18:27:52 +0000
+Processing by MoviesController#search_director as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "5"]]
+Redirected to https://learning-saas-advcodelrn.c9.io/movies
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 93.72.199.161 at 2015-12-01 18:27:52 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (19.4ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:27:52 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:52 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:52 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:27:52 +0000
+
+
+Started GET "/" for 93.72.199.161 at 2015-12-01 18:28:01 +0000
+
+
+Started GET "/movies" for 93.72.199.161 at 2015-12-01 18:28:01 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:28:01 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:01 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:01 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:01 +0000
+
+
+Started GET "/movies/4" for 93.72.199.161 at 2015-12-01 18:28:09 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered movies/show.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:28:10 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:10 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:10 +0000
+
+
+Started GET "/movies/search-director/4" for 93.72.199.161 at 2015-12-01 18:28:11 +0000
+Processing by MoviesController#search_director as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."director" = ?[0m  [["director", "Director"]]
+  Rendered movies/search_director.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:28:11 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:11 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:11 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:11 +0000
+
+
+Started GET "/movies" for 93.72.199.161 at 2015-12-01 18:28:13 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:13 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:13 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 93.72.199.161 at 2015-12-01 18:28:13 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 93.72.199.161 at 2015-12-01 18:28:13 +0000
